@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to open Trivia!</h1>
+        <div class="output">
+            <% if(locals.question){ %>
+                <p>
+                    <%= question %>
+                </p>
+            <% } %>
+        </div>
+        <form class = "form" action="/trivia" method = "POST">
+            <div class="choice">
+                <p>Category: </p>
+                <select name="category" id="category">
+                    <option value="21">Sports</option>
+                    <option value="25">Art</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicals</option>
+                    <option value="24">Politics</option>
+                </select>
+            </div>
+            <div class="choice">
+                <p>Difficulty: </p>
+                <select name="diff" id="diff">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <button type="submit">Get</button>
+        </form>
+    </div>
+    <% if(locals.answer){ %>
+        <footer>
+            <p>
+                <%= answer %>
+            </p>
+        </footer>
+        
+    <% } %> 
+</body>
+</html>

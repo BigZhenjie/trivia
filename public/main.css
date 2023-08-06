@@ -1,0 +1,53 @@
+
+
+body{
+    background-color: antiquewhite;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+option{
+    border: none;
+    outline: none;
+}
+
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center   ;
+}
+
+
+.output{
+    background-color: #88B378;
+    display: inline-block;
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+select{
+    height: 20px;
+}
+
+footer{
+    text-align: center;
+}
